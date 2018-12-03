@@ -1,0 +1,22 @@
+server:
+  port: 8881
+eureka:
+  instance:
+    #将来注册到该注册中心的微服务包括注册中心都是用IP地址
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.241.130:8761/eureka/
+    #是否注册到注册中心，注册中心不需要自己注册
+    registerWithEureka: true
+    #是否从注册中心抓取注册信息，自己不需要抓取
+    fetchRegistry: false
+spring:
+  application:
+    #不要出现下划线
+    name: userservice
+  datasource:
+    url: jdbc:mysql://localhost/unit02
+    username: root
+    password: ps123456
+    driver-class-name: com.mysql.jdbc.Driver
