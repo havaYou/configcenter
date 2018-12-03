@@ -16,7 +16,7 @@ spring:
     #不要出现下划线
     name: userservice
   datasource:
-    url: jdbc:mysql://localhost/emp
+    url: jdbc:mysql://localhost/unit02
     username: root
     password: ps123456
     driver-class-name: com.mysql.jdbc.Driver
