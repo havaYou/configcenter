@@ -1,5 +1,5 @@
 server:
-  port: 8881
+  port: 8883
 eureka:
   instance:
     #将来注册到该注册中心的微服务包括注册中心都是用IP地址
